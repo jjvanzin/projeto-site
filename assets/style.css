@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cor-fundo: #212121;
+    --cor-botao: #3d3d3d;
+    --cor-texto: #ffffff;
+    --fonte-principal: 'Manrope';
+}
+
+body {
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* ------------- section - inicial ------------ */
+
+.principal {
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: transparent;
+    border: 2px solid var(--cor-botao);
+    border-radius: 3em;
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    width: auto;
+}
+
+.container a {
+    font-family: var(--fonte-principal);
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.container a:hover {
+    background-color: var(--cor-botao);
+    letter-spacing: 1.2px;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    font-size: 3.065em;
+    font-weight: 700;
+}
+
+.container__logo {
+   width: 70%;
+   margin: auto;
+}
+
+
+/* ------------- section - o que fazemos ------------ */
+
+.trabalho {
+    text-align: center;
+    height: 100vh;
+}
+
+.trabalho__caixa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-right: 4em;
+    text-align: center;
+}
+
+.texto__titulo {
+    font-size: 34px;
+    margin-top: 5em;
+}
+
+.lista__trabalho {
+    margin: 0 auto;
+    padding-left: 4em;
+}
+
+.lista__imagem {
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 3em;
+    height: 420px;
+    width: 420px;
+    transition: transform 0.2s;
+}
+
+.lista__imagem:hover {
+    transform: scale(1.2);
+}
+
+
+.lista__item {
+    color: var(--cor-texto);
+    font-size: 24px;
+    margin-top: 3em ;
+}
+
+
+/* ------------- section - parceiros ------------ */
+
+.parceiro {
+    text-align: center;
+    height: 100vh;
+}
+
+.parceiro__caixa {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.parceiro__logo {
+    margin: auto;
+    width: 60%;
+    padding: 2em;
+}
+
+
+/* ------------- section - localização------------ */
+
+.descricao__texto {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+
+/* ------------- section - redes sociais ------------ */
+
+.redesocial {
+    text-align: center;
+}
+
+.redesocial__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+.lista__icone--imagem {
+    margin-top: 0.5em;
+    margin-left: 3em;
+    margin-right: 3em;
+    width: 10em;
+}
+
+.lista__icone {
+    margin-bottom: 1em;
+    margin-right: 1em;
+    transition: transform .2s;
+}
+
+.lista__icone:hover {
+    transform: scale(1.2);
+}
+
+
+/* ------------- section - rodapé ------------ */
+
+.rodape {
+    text-align: center;
+    margin-top: 5em;
+    padding: 3em 1em;
+    /*background-color: var(--cor-botao);*/
+    border-top: 1px solid var(--cor-botao);
+}
+
+.rodape__logo {
+    width: 10%;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+    list-style-type: none;
+}
+
+.rodape__link a {
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    line-height: 4em;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.rodape__link a:hover {
+    text-decoration: underline;
+}
+
+.rodape__texto {
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    letter-spacing: 1.2px;
+    line-height: 1.5em;
+}
+
+
+/* ------------- mobile first ------------ */
+
+@media screen and (max-width: 700px) {
+    
+    /* ------------- section - inicial ------------ */
+    body {
+        width: auto;
+        text-align: center;
+    }    
+    
+
+    .texto__titulo {
+        text-align: center;
+    }
+
+    .container__titulo {
+        font-size: 2em;
+        margin-top: 3em;
+    }
+
+    .container__botao {
+        margin-top: 1em;
+        width: auto;
+    }
+
+    .container__logo {
+        width: 50%;
+        margin-top: 3em;
+    }
+
+    .principal, .trabalho, .localizacao__caixa, .redesocial,
+    .redesocial__lista, .rodape, .rodape__lista {
+        display: block;
+        margin: 0 auto;
+        width: auto;
+    }
+
+  
+    /* ------------- section - o que fazemos ------------ */
+    
+    .trabalho__caixa {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .lista__imagem {
+        margin-top: 2em;
+        height: 150px;
+        width: 180px;
+    }
+
+    .lista__item {
+        margin: 0.4em;
+    }
+
+
+    /* ------------- section - parceiros ------------ */
+    .parceiro__caixa {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .parceiro__logo {
+        width: 130px;
+        padding: 1.2em;
+    }
+    
+
+    /* ------------- section - localizacao ------------ */
+    .localizacao__tamanho {
+        margin-top: 3em;
+        width: 280px;
+        height: 380px;
+    }
+
+
+    /* ------------- rede social ------------ 
+    .redesocial {
+        margin-bottom: 5em;
+        margin-right: 1.75em;
+    }
+    */
+
+    /* ------------- rodape ------------ */
+    .rodape {
+        border-top: 1px solid var(--cor-botao);
+    }
+
+    .rodape__logo {
+        width: 180px;
+    }
+
+    .rodape__lista {
+        margin-right: 2em;
+    }
+}
