@@ -187,6 +187,7 @@ body {
     margin-top: 5em;
     padding: 3em 1em;
     /*background-color: var(--cor-botao);*/
+    border-top: 1px solid var(--cor-botao);
 }
 
 .rodape__logo {
@@ -252,7 +253,7 @@ body {
         margin-top: 3em;
     }
 
-    .principal, .trabalho, .localizacao__caixa,
+    .principal, .trabalho, .localizacao__caixa, .redesocial,
     .redesocial__lista, .rodape, .rodape__lista {
         display: block;
         margin: 0 auto;
@@ -299,16 +300,19 @@ body {
     }
 
 
-    /* ------------- rede social ------------ */
+    /* ------------- rede social ------------ 
     .redesocial {
         margin-bottom: 5em;
         margin-right: 1.75em;
     }
-
+    */
 
     /* ------------- rodape ------------ */
+    .rodape {
+        border-top: 1px solid var(--cor-botao);
+    }
+
     .rodape__logo {
-        
         width: 180px;
     }
 
