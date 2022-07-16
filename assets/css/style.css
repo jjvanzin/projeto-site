@@ -21,12 +21,12 @@ body {
 .principal {
     align-items: center;
     text-align: center;
+    height: 100vh;
 }
 
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 100vh;
 }
 
 .container__botao {
@@ -133,7 +133,8 @@ body {
 
 .parceiro__logo {
     margin: auto;
-    width: 40%;
+    width: 60%;
+    padding: 2em;
 }
 
 
@@ -223,22 +224,22 @@ body {
 
 /* ------------- mobile first ------------ */
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 700px) {
     
     /* ------------- section - inicial ------------ */
     body {
         width: auto;
-        height: 100vh;
         text-align: center;
     }    
     
+
     .texto__titulo {
         text-align: center;
-        margin-top: 3em;
     }
 
     .container__titulo {
-        margin-top: 1.3em;
+        font-size: 2em;
+        margin-top: 3em;
     }
 
     .container__botao {
@@ -247,10 +248,12 @@ body {
     }
 
     .container__logo {
-        width: 70%;
+        width: 50%;
+        margin-top: 3em;
     }
 
-    .principal, .trabalho, .localizacao__caixa ,.redesocial, .redesocial__lista, .rodape, .rodape__lista {
+    .principal, .trabalho, .localizacao__caixa,
+    .redesocial__lista, .rodape, .rodape__lista {
         display: block;
         margin: 0 auto;
         width: auto;
@@ -262,13 +265,12 @@ body {
     .trabalho__caixa {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 2em;
     }
     
     .lista__imagem {
         margin-top: 2em;
-        height: 180px;
-        width: 280px;
+        height: 150px;
+        width: 180px;
     }
 
     .lista__item {
@@ -277,43 +279,40 @@ body {
 
 
     /* ------------- section - parceiros ------------ */
-    
     .parceiro__caixa {
         display: flex;
-        flex-wrap: wrap;
-        margin: 2em;
-        
+        align-items: center;
+        flex-direction: column;
     }
 
     .parceiro__logo {
-        padding: 1.5em;
-        width: 115px;
+        width: 130px;
+        padding: 1.2em;
     }
     
 
     /* ------------- section - localizacao ------------ */
     .localizacao__tamanho {
-        margin: auto;
+        margin-top: 3em;
         width: 280px;
-        height: 280px;
+        height: 380px;
     }
 
 
     /* ------------- rede social ------------ */
     .redesocial {
-        margin: auto auto;
-        margin-bottom: 3em;
+        margin-bottom: 5em;
+        margin-right: 1.75em;
     }
 
 
     /* ------------- rodape ------------ */
     .rodape__logo {
-        margin-left: 2em;
-        width: 50%;
+        
+        width: 180px;
     }
 
     .rodape__lista {
-        margin-right: 1.2em;
+        margin-right: 2em;
     }
-
 }
