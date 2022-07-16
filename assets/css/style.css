@@ -240,8 +240,8 @@ body {
     }
 
     .container__titulo {
-        font-size: 2em;
-        margin-top: 3em;
+        font-size: 2.2em;
+        margin-top: 2em;
     }
 
     .container__botao {
@@ -254,10 +254,9 @@ body {
         margin-top: 3em;
     }
 
-    .principal, .trabalho, .localizacao__caixa, .redesocial,
-    .redesocial__lista, .rodape, .rodape__lista {
+    .principal, .trabalho, .localizacao__caixa, .rodape {
         display: block;
-        margin: auto;
+        margin: 0 auto;
         width: auto;
         height: auto;
     }
@@ -282,6 +281,7 @@ body {
 
 
     /* ------------- section - parceiros ------------ */
+
 
     .parceiro__caixa {
         display: flex;
@@ -309,6 +309,9 @@ body {
         margin-right: 1.75em;
     }
     */
+    .redesocial__lista {
+        display: block;
+    }
 
     /* ------------- rodape ------------ */
     .rodape {
@@ -316,10 +319,12 @@ body {
     }
 
     .rodape__logo {
-        width: 180px;
+        width: 160px;
     }
 
     .rodape__lista {
+        display: block;
         margin-right: 2em;
-    }
+    } 
+    
 }
